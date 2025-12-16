@@ -5,18 +5,23 @@
 
 Burgers' Equation is a Partial Differential Equation PDE which occurs in various fields of physics, but most importantly fluid mechanics. We use the general form of Burgers' equation also known as the "Viscous Burgers' equation", 
 
-$$\frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x}
-= \nu \frac{\partial^2 u}{\partial x^2}$$
+$$
+\frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x}
+= \nu \frac{\partial^2 u}{\partial x^2}
+$$
 
 Raissi _et al._ (2019), in one of the most fundamental papers on PINNs, implements this equation with $\nu = \frac{0.01}{\pi}$. We draw inspiration from many of their ideas in this implementation.
 
 The PINN models the state variable $u$. We define,
+
 $$
 f :\frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} -  \nu \frac{\partial^2 u}{\partial x^2}
 $$
+
 where the Mean Squared Error (MSE) of $f$ will be our collocation points error.
 
 The boundary conditions are Dirichlet,
+
 $$
 x \in [-1,1], \quad t \in [0,1]
 $$
@@ -33,7 +38,7 @@ $$
 ## Models
 We use Tensorflow in Python for implementations.
 
-The test set used: [Link to test set](https://github.com/maziarraissi/PINNs/tree/master/appendix/Data)
+The test set used: [Link to test set](https://github.com/maziarraissi/PINNs/tree/master/appendix/Data)\
 We use relative $L_2$ error, the same as used in Raissi _et al._ (2019).
 
 The best model was obtained in **Implementation IV**.
