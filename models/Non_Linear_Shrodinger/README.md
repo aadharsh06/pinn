@@ -9,8 +9,9 @@ that is used to study quantum mechanical systems. It is primarily used to study 
 
 $$i h_t + 0.5h_{xx} + |h|^2 h = 0$$
 with periodic boundary conditions,
+
 $$
-x \in [-5,\,5], \qquad t \in \left[0,\,\frac{\pi}{2}\right], \tag{5}
+x \in [-5,5], \quad t \in [0, \pi/2]
 $$
 
 $$
