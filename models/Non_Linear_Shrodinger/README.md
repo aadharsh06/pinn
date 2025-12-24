@@ -54,7 +54,7 @@ Note the results shown here are of the best/latest implementation. Corresponding
 
 Other observations/results:
 
-* Even though L-BFGS `max_iterations = 50000`, it stopped early, before 15,000 function calls. (Function calls is defined in `nls_train.py`
+* Even though L-BFGS `max_iterations = 50000`, it stopped early, before 15,000 function calls. Function calls are defined in `nls_train.py`
 * Time taken for training: 2617.038 seconds (≈43.6 minutes). Note, a P100 GPU was used.
 * Final training losses:\
 MSE_o: 1.398e-05 (initial condition loss)\
