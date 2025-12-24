@@ -62,6 +62,6 @@ MSE_f: 6.353e-05 (collocation points loss)
 
 ## Plots
 
-`![NLS Pred vs Truth](plots/nls_pred_vs_truth.png)`
+![NLS Pred vs Truth](plots/nls_pred_vs_truth.png)
 
-`![t = 0.79 Slice](plots/nls_slice_t_0.79.png)`
+![t = 0.79 Slice](plots/nls_slice_t_0.79.png)
