@@ -11,10 +11,18 @@ Physics-Informed Neural Networks (PINNs) aim to reduce the dependence on large a
 \
 PINNs often produce low test set error with less data with physically consistent solutions.
 
-## Models implemented
+## Models
 
-Implemented models can be found in the `models/` folder. Please do read the README file in each model's folder :) \
+PINNs can be classified into continuous time models and discrete time models, based on how we handle the time domain.
+In continous time models, the PDE is enforced pointwise in continuous time.
+In discrete time models, PDE is enforced through a time stepping scheme (we use Runge Kutta here), which constrains the neural network outputs at discrete time levels.
+
+Implemented models can be found in the respective folders. Please do read the README file in each model's folder :) \
 I have attached relevant plots/derivations, wherever applicable.
 
-1. Burgers' Equation
-2. Non-Linear Schrödinger Equation (NLS)
+#### Implemented:
+1. Burgers' PDE (continuous time model)
+2. Burgers' PDE (discrete time model)
+3. Nonlinear Schrödinger equation (continuous time model)
+4. Allen–Cahn equation (discrete time model) — In progress.
+
