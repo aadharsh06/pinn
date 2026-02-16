@@ -89,3 +89,36 @@ $b_j$ - How much stage $j$ contributes to the final step.
 
 Since, we are using implicit RK, all these weights are already computed and provided to us. \
 They are precomputed using classical numerical analysis.
+
+### Loss functions
+
+The loss function on randomly sampled points, we defined as $x0$,
+
+$$
+\mathrm{SSE}_n =
+\sum_{j=1}^{q+1}
+\sum_{i=1}^{N_n}
+\left|
+u_j^{n}\left(x^{n,i}\right) - u^{n,i}
+\right|^2
+$$
+
+The loss function for the boundary points,
+
+$$
+\mathrm{SSE}_b =
+\sum_{i=1}^{q}
+\Big(
+\lvert u^{n+c_i}(-1) \rvert^2
++
+\lvert u^{n+c_i}(1) \rvert^2
+\Big)
++
+\lvert u^{n+1}(-1) \rvert^2
++
+\lvert u^{n+1}(1) \rvert^2
+$$
+
+We sum the two losses to get our total loss.
+
+Notice that we are using sum of squared errors instead of mean squared error.
