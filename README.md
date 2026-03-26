@@ -25,5 +25,6 @@ I have attached relevant plots/derivations, wherever applicable.
 2. Burgers' PDE (discrete time model)
 3. Nonlinear Schrödinger equation (continuous time model)
 4. Allen–Cahn equation (discrete time model)
-5. Coupled PDEs — In Progress.
+5. Basic Coupled PDE (continuous time model)
+6. Navier–Stokes — In Progress.
 
